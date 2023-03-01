@@ -1,0 +1,19 @@
+use bootcamp;
+create table students
+(
+id int primary key auto_increment,
+name varchar(255),
+age int,
+gender varchar(255)
+);
+insert into students values(1,"Enelra",8,"Female");
+insert into students values(2,"Rhea",19,"Female");
+insert into students values(3,"Alwyn",60,"Male");
+select * from students;
+
+update students
+set name="Janet" where id=2;
+
+delete from students where id = 3;
+
+select * from students;
